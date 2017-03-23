@@ -183,3 +183,7 @@ h2 {
     display: block;
     z-index: 50;
 }
+
+.portfolio-box:hover {
+    cursor:pointer;
+}
