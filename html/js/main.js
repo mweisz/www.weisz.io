@@ -1,4 +1,4 @@
-$('#contact_form').submit(function(e){
+$('#contact_form').unbind('submit').bind('submit', function(e){
   
     e.preventDefault(); // Prevent Default Submission
 
@@ -24,7 +24,7 @@ $('#contact_form').submit(function(e){
         });
     })
     .fail(function(){
- alert('Ajax Submit Failed ...'); 
+ alert('Could not submit form. '); 
     });
 });
 
