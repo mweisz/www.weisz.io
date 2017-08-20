@@ -62,7 +62,7 @@ var projectData = {
         'title' : 'Chess OCR',
         'subtitle' : 'Chess OCR',
         'creators' : 'Michael Weisz',
-        'description' : '<p>...</p>' ,
+        'description' : '<p></p>' ,
         'imgPath' : 'img/portfolio/chess-ocr.jpg',
 
     },
