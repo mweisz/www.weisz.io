@@ -11,7 +11,7 @@ $('#contact_form').submit(function(e){
     }
 
     $.ajax({
- url: 'submit.php',
+ url: 'cgi-bin/contact-form.py',
  type: 'POST',
  data: $(this).serialize(), // it will serialize the form data
         dataType: 'html'
