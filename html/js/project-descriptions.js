@@ -33,21 +33,6 @@ function onProjectClick(projectId) {
               '</div>' +
             '</div>';    
 
-            // var html = '<div class="media">' +
-            //     '<h4 class="media-heading">' + title + '</h4>' +
-            //     '<h5 class="media-subheading">By ' + creators + '</h5>' +
-
-            //   '<div class="media-left">' +
-            //      '<img class="media-object" src="' + imgPath +'" alt="...">' +
-            //   '</div>' +
-            //   '<div class="media-body">' +
-            //     description +
-            //   '</div>' +
-            //   '<div class="media-footer">' +
-            //         '<span class="media-footer-left"></span><span class="media-footer-right">'+ websiteHTML+' </span>' +
-            //   '</div>' +
-            // '</div>';
-
     var dialog = bootbox.dialog({
         message: html,
         onEscape: true,

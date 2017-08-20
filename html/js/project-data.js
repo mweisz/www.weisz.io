@@ -49,5 +49,30 @@ var projectData = {
         'imgPath' : 'img/portfolio/quote-of-the-day.jpg',
         'url' : 'https://github.com/mweisz/mac-lockscreen-quote-of-the-day'
 
+    },
+    'get-me-home-safe': {
+        'title' : 'Get Me Home Safe',
+        'subtitle' : 'Get Me Home Safe',
+        'creators' : 'Ute Benz, Jonas Keutel, Sebastian Kliem, Olga Cherepanova, Michael Weisz',
+        'description' : '<p>Created prototype for award-winning mobile application helping people to to find the safest route possible when walking or using public transportation. </p><p>The systems uses various public data sources, community data and the user\'s preferences to determine whether or not a certain route segment can be considered potentially dangerous (think of abandoned train stations, forests and parks, locations near potentially drunk crowds after sport events, etc.). </p><p>The prototype was created in the scope of the \'The other Hackathon\' hosted by SAP and Geekettes. The first prize included a trip to Silicon Valley where we had the opportunity to pitch the project to SAP executives Sam Yen (Chief Design Officer) and Tanja Rückert (EVP LoB Digital Assets and IoT).</p>' ,
+        'imgPath' : 'img/portfolio/get-me-home-safe.jpg'
+
+    },
+    'chess-ocr': {
+        'title' : 'Chess OCR',
+        'subtitle' : 'Chess OCR',
+        'creators' : 'Michael Weisz',
+        'description' : '<p>...</p>' ,
+        'imgPath' : 'img/portfolio/chess-ocr.jpg',
+
+    },
+    'future-home': {
+        'title' : 'OSX: Quote of the Day for Lockscreen',
+        'subtitle' : 'Quote of the Day for Mac Lockscreen',
+        'creators' : 'Michael Weisz',
+        'description' : '<p>Provides a "Quote of the Day" feature for the logon/lock screen of OS X. </p> <p>Reads a random line from a provided text file or takes a quote from a publicly available source like wikiquote.org and sets it as lock screen message.</p>' ,
+        'imgPath' : 'img/portfolio/quote-of-the-day.jpg',
+        'url' : 'https://github.com/mweisz/mac-lockscreen-quote-of-the-day'
+
     }
 }
