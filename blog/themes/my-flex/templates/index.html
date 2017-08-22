@@ -13,43 +13,61 @@
 {% endif %}
 
   <div id="permanent-greeting">
-    Welcome to my blog!
+    <h1>Welcome to my blog!</h1>
   </div>
 
 {% for article in articles_page.object_list %}
 <article>
-  <header>
-    <h2><a href="{{ SITEURL }}/{{ article.url }}#{{ article.slug }}">{{ article.title }}</a></h2>
-    <p>
-      {{ _('Posted on %(when)s in %(category)s',
+<div class="media">
+  <div class="media-left media-top">
+    <a href="{{ SITEURL }}/{{ article.url }}#{{ article.slug }}" class="thumbnail">
+       <img src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/img/article-thumbnails/{{ article.image if article.image else 'default.jpg' }}" alt="..." title="..." class="media-object preview-image" />
+    </a>
+  </div>
+  <div class="media-body">
+  
+    <h2 class="media-heading"><a href="{{ SITEURL }}/{{ article.url }}#{{ article.slug }}">{{ article.title }}</a></h2>
+          <span>{{ _('Posted on %(when)s in %(category)s',
            when=article.locale_date,
-           category='<a href="%s/%s">%s</a>'|format(SITEURL, article.category.url, article.category)|safe) }}
-
-      {% if article.tags and not HOME_HIDE_TAGS %}
-          &#8226; {{ _('Tagged with') }}
+           category='<a href="%s/%s">%s</a>'|format(SITEURL, article.category.url, article.category)|safe) }}</span>
+    
+  <span class="tag-cloud">
+      {% if article.tags %}
+      {% for tag in article.tags %}
+      <a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>
+      {% endfor %}
+      {% endif %}
+  </span>
+    <!-- {% if article.tags and not HOME_HIDE_TAGS %}
+          {{ _('Tagged with') }}
           {% for tag in article.tags %}
               <a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>{% if not loop.last %},{% endif %}
           {% endfor %}
       {% endif %}
 
       {% if 'post_stats' in PLUGINS %}
-        &#8226; {{ article.stats['read_mins'] }} min read
-      {% endif %}
-    </p>
-  </header>
+{{ article.stats['read_mins'] }} min read
+      {% endif %} -->
+      
+    <p>
+      <div>
+        {% if summarise or article.metadata['summary'] or SUMMARY_MAX_LENGTH %}
+          {{ article.summary }}
 
-  <div>
-    {% if summarise or article.metadata['summary'] or SUMMARY_MAX_LENGTH %}
-      {{ article.summary }}
-      <br>
-      <a class="btn" href="{{ SITEURL }}/{{ article.url }}#{{ article.slug }}">{{ _('Continue reading') }}</a>
-    {% else %}
-      {{ article.content }}
-    {% endif %}
+          <!-- <a class="btn" href="{{ SITEURL }}/{{ article.url }}#{{ article.slug }}">{{ _('Continue reading') }}</a> -->
+        {% else %}
+          {{ article.content }}
+        {% endif %}
+      </div>
+    </p>
   </div>
+</div>
+ 
+
   {% if not loop.last %}
   <hr />
   {% endif %}
+
 </article>
 {% endfor %}
 

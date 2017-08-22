@@ -1,7 +1,8 @@
-Title: Hack Zurich
+Title: HackZurich 2016: Europe's Biggest Hackthon
 Date: 2017-08-20 18:56
 Category: General
-Summary: My experiences at HackZurich 2016 -- Europe's largest hackathon. 
+Summary: Lorem ipsum dolor sit amet consectetur adipiscing elit platea, ridiculus pharetra sed lobortis sociosqu placerat neque fusce himenaeos, magna congue ultrices nullam auctor nisl massa. Donec dui quis fusce nulla massa primis feugiat, rhoncus vulputate ante neque fringilla justo, lacus ridiculus cras elementum scelerisque per.
+Image: hamburg.jpg
 Tags: Machine Learning, Hackathon
 
 
@@ -28,7 +29,7 @@ Lorem ipsum dolor sit amet consectetur adipiscing elit proin, nibh fringilla feu
 ### Underlying prediction model 
 IBM SPSS data model based on ARIMA and Simple Seasonal Time Series prediction models.
 Run on IBM Bluemix platform using IBM Prediction analytics. Accessed by the interactive home plan using REST.
-![alt tag](http://michael-weisz.de/bak/hackzurich/model.png)
+![alt tag](http://old.michael-weisz.de/bak/hackzurich/model.png)
 
 
 

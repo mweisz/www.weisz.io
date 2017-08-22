@@ -1,7 +1,8 @@
-Title: An Amazing Poem
+Title: Why We Should All Be Dreamers!
 Date: 2017-08-20 21:42
 Category: Texts
-Summary: We are the music makers and we are the dreamer of dreams...
+Summary: Lorem ipsum dolor sit amet consectetur adipiscing elit facilisi ac, lacus cum ligula pulvinar taciti eget fames nullam velit praesent, dictumst magnis vitae primis vulputate vel felis et. Lorem ipsum dolor sit amet consectetur adipiscing elit facilisi ac, lacus cum ligula pulvinar taciti eget fames nullam velit praesent, dictumst magnis vitae primis vulputate vel felis et.
+Image: dummy-article-preview.jpg
 Tags: Poetry
 
 # Ode by Arthur O'Shaughnessy

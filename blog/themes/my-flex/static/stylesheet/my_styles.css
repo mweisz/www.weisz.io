@@ -3,6 +3,35 @@ body {
 }
 /*rgba(234, 46, 73, 0.9);*/
 
+
+.media a {
+  width: 200px;
+  height: 138px;
+}
+
+.preview-image {
+  max-width: 200px;
+  height: 138px;
+}
+
+#permanent-greeting {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+#permanent-greeting h1 {
+  text-align: center;
+}
+
+.media-left {
+  padding-right: 25px;
+}
+
+article hr {
+  /*margin-top: 50px !important;
+  margin-bottom: 50px !important*/
+}
+
 aside div img {
     max-width: 180px;
 }
